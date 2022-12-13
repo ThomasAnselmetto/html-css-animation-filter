@@ -242,11 +242,47 @@
         top: 100%;
     }
 
-    75% {}
+    75% {
+        left: 0%;
+        top: 100%;
+    }
+
+    100% {
+        left: 10%;
+        top: -10px;
+
+    }
 }
 
 
-@keyframes movingbottom {}
+@keyframes movingbottom {
+    0% {
+        right: 20%;
+        bottom: -2px;
+    }
+
+    25% {
+        right: calc(100% - 60px);
+        bottom: -10px;
+    }
+
+    50% {
+        right: calc(100% - 60px);
+        bottom: 100%;
+    }
+
+    75% {
+        right: 0%;
+        bottom: 100%;
+    }
+
+    100% {
+        right: 20%;
+        bottom: -10px;
+
+    }
+}
+
 
 
 .ex-13-button:hover .ex-13-top-white {
@@ -256,4 +292,6 @@
 
 
 
-.ex-13-button:hover .ex-13-top-white {}
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: movingbottom 5s linear;
+}
