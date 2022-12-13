@@ -258,7 +258,7 @@
 @keyframes movingbottom {
     0% {
         right: 20%;
-        bottom: -2px;
+        bottom: -10px;
     }
 
     25% {
